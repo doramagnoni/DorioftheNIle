@@ -3,23 +3,32 @@
 
 /* ------------------Colors */
 .bg-color-name-title {
-    background-color: #a47551;
+    background-color: #b79456;
 }
 
 .ui-menu-color-home {
-    background-color: #917942;
+    background-color: #a47551;
 }
 
 .ui-menu-color-resume {
-    background-color: #777d3c;
+    background-color: #6a5d3b;
 }
-
+.ui-menu-color-about {
+    background-color: #917942; /* Warm brown to match parchment */
+} 
 .ui-menu-color-contact {
     background-color: #558143;
 }
+.ui-menu-color- {
+    background-color: #6a5d3b; /* Warm brown to match parchment */
+}
 
 .ui-menu-color-download {
-    background-color: #89b674;
+    background-color: #538b66;
+}
+
+.ui-menu-color-merch {
+    background-color: #205837;
 }
 
 .bg-color-three-reasons {
@@ -92,7 +101,7 @@ header {
 
 
 
-.logo {
+body.about-page .logo  {
     background: url(../assets/pictures/DorioftheNile.JPG);
     background-position: center;
     background-repeat: no-repeat;
@@ -103,6 +112,49 @@ header {
     -webkit-transition: all .5s ease-out;
 }
 
+body.videos-page .logo  {
+    background: url(../assets/pictures/videos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
+
+body.blog-page .logo  {
+    background: url(../assets/pictures/Blog.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
+
+body.resources-page .logo  {
+    background: url(../assets/pictures/resource.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
+
+body.merch-page .logo  {
+    background: url(../assets/pictures/merch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
 
 .name {
     font-family: "Exo", sans-serif;
@@ -283,7 +335,14 @@ footer {
     width: 60%;
 }
 
-/* ------------------Skills */
+/* ------------------Videos */
+
+.video-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: #4b3b2a;
+    margin-top: 0.5rem;
+}
 
 .progress {
     position: relative;
@@ -371,6 +430,7 @@ button[type="submit"] {
     color: #fafafa;
     background-color: #A9121A;
 }
+
 
 /* ------------------Media Query */
 

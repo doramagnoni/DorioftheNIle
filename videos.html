@@ -20,41 +20,63 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+      background: url('assets/pictures/parchment.jpg') repeat;
+      background-size: cover;
+      color: #3d2e21;
+    }
 
-<style>
-  body.about-page {
-    font-family: 'Cinzel', serif;
-    background: url('assets/pictures/parchment.jpg') repeat;
-    background-size: cover;
-    color: #3d2e21;
-  }
+    .section-heading {
+      margin: 2rem 0 1rem;
+      font-size: 2.5rem;
+      text-align: center;
+      letter-spacing: 1px;
+    }
 
-  .about-card {
-    background: rgba(255, 248, 230, 0.95);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    margin-top: 2rem;
-    text-align: center;
-  }
+  .video-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: rgba(255, 248, 230, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
-  .section-heading {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-  }
 
-  .about-card p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #4a3b2c;
-  }
-</style>
+    .video-card:hover {
+      transform: scale(1.02);
+    }
 
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    .video-card .card-body {
+      padding: 1rem;
+    }
+
+    .video-card h5 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .video-card p {
+      font-size: 0.95rem;
+      color: #5b4a3c;
+    }
+  </style>
 </head>
 
-<body class="about-page">
+<body class="videos-page">
+
     <header>
         <div class="row no-gutters">
             <a href="index.html" class="col-md-4 logo">
@@ -64,7 +86,7 @@
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
                         <h1 class="name">Dori of the Nile</h1>
-                        <h2 class="title"> Through Dust and Time: A Storyteller’s Path</h2>
+                        <h2 class="title"> Egyptology through a storyteller’s lens</h2>
                     </div>
                 </div>
                 <div class="row no-gutters">
@@ -108,6 +130,7 @@
 
 
 
+
                     </div>
 
                 </div>
@@ -115,21 +138,48 @@
             </div>
         </div>
     </header>
-<section class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-10">
-      <div class="about-card">
-        <h2 class="section-heading uppercase mb-4">About Me</h2>
-        <p>
-          Hi, I’m Dori—an Egyptologist and storyteller with a deep love for ancient worlds and the people who lived in them. I hold a PhD in Egyptology and have spent years working on projects that bring the past to life—from translating and conserving ancient papyri to reconstructing sacred texts in the Valley of the Kings.
-        </p>
-        <p>
-          Through Dori of the Nile, I share stories that make Ancient Egypt feel vivid, beautiful, and deeply human. Whether it’s a whispered love letter from thousands of years ago or the legacy of a forgotten pharaoh, my goal is to spark curiosity, wonder, and a sense of connection between then and now.
-        </p>
-      </div>
+
+
+<!-- VIDEO SECTION -->
+  <section class="container py-5">
+    <h2 class="section-heading">Featured Videos</h2>
+    <div class="row">
+
+      <!-- Video 1 -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="video-card">
+    <iframe src="https://www.youtube.com/embed/WA2UQ2Jsu0E?start=192" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5>What the Afterlife Meant to the Ancient Egyptians</h5>
+      <p>Explore the mysteries of the Egyptian underworld and the beautiful beliefs about eternity.</p>
     </div>
   </div>
-</section>
+</div>
+
+
+ <div class="col-md-6 col-lg-4 mb-4">
+  <div class="video-card">
+    <iframe src="https://www.youtube.com/embed/HQO5i8OPtnY" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5>What the Afterlife Meant to the Ancient Egyptians</h5>
+      <p>Explore the mysteries of the Egyptian underworld and the beautiful beliefs about eternity.</p>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Video 3 -->
+ <div class="col-md-6 col-lg-4 mb-4">
+  <div class="video-card">
+    <iframe src="https://www.youtube.com/embed/XpYbF53_WYY" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5>What the Afterlife Meant to the Ancient Egyptians</h5>
+      <p>Explore the mysteries of the Egyptian underworld and the beautiful beliefs about eternity.</p>
+    </div>
+  </div>
+</div>
+  </section>
+
 
 
  <footer class="container-fluid">
