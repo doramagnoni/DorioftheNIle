@@ -32,12 +32,36 @@
             background-color: #4a4a4a;
         }
 
-        /* Global base font and parchment feel */
+
+.hero-text h1 {
+    font-size: 3.8rem;
+    margin-bottom: 0.5rem;
+    color: #3b2d1f;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4c3e2d;
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+
 body {
     font-family: 'Cinzel', serif;
     font-weight: 400;
     color: #3b2d1f;
-    background: url('assets/pictures/parchment2.jpg') repeat;
+    background: url('assets/pictures/parchment.jpg') repeat;
     background-size: cover;
     background-attachment: fixed;
     line-height: 1.6;
@@ -157,7 +181,7 @@ footer a:hover {
 }
 
 .navbar-collapse {
-    background: url('../assets/pictures/parchment.jpg') repeat;
+    background: url('../assets/pictures/parchment2.jpg') repeat;
     background-size: cover;
     border-radius: 20px;
     margin: 0.5rem;
@@ -206,8 +230,13 @@ footer a:hover {
 
 
 <body>
-    <header class="hero-banner">
-    </header>
+<header class="hero-banner d-flex align-items-center justify-content-center text-center">
+  <div class="hero-text">
+    <h1>DORI OF THE NILE</h1>
+    <p>Echoes of Ancient Egypt</p>
+  </div>
+</header>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
