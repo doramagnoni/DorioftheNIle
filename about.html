@@ -50,16 +50,32 @@
     line-height: 1.8;
     color: #4a3b2c;
   }
+
+  .about-image {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .about-image img {
+      width: 100%;
+    }
+  }
 </style>
 
 </head>
 
+
 <body class="about-page">
     <header>
         <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo">
-
-            </a>
+            <a href="index.html" class="col-md-4 logo"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
@@ -100,18 +116,15 @@
             <span>Resources</span>
         </a>
     </li>
-              <li class="col-6 col-sm-2 ui-menu-color-merch list-inline-item menuitem">
-                <a href="merch.html" class="hvr-sweep-to-bottom"><i class="fa fa-gem"></i><span>Merch</span></a>
-              </li>
-
+    <li class="col-6 col-sm-2 ui-menu-color-merch list-inline-item menuitem">
+        <a href="merch.html" class="hvr-sweep-to-bottom">
+            <i class="fa fa-gem" aria-hidden="true"></i>
+            <span>Merch</span>
+        </a>
+    </li>
 </ul>
-
-
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     </header>
@@ -120,65 +133,80 @@
     <div class="col-md-10">
       <div class="about-card">
         <h2 class="section-heading uppercase mb-4">About Me</h2>
-        <p>
-          Hi, I’m Dori—an Egyptologist and storyteller with a deep love for ancient worlds and the people who lived in them. I hold a PhD in Egyptology and have spent years working on projects that bring the past to life—from translating and conserving ancient papyri to reconstructing sacred texts in the Valley of the Kings.
-        </p>
-        <p>
-          Through Dori of the Nile, I share stories that make Ancient Egypt feel vivid, beautiful, and deeply human. Whether it’s a whispered love letter from thousands of years ago or the legacy of a forgotten pharaoh, my goal is to spark curiosity, wonder, and a sense of connection between then and now.
-        </p>
+        <p>Hi, I’m <strong>Dori</strong> — an Egyptologist and storyteller with a deep love for ancient worlds and the people who lived in them. I hold a PhD in Egyptology and have spent years working on projects that bring the past to life — from translating and conserving ancient papyri to reconstructing sacred texts in the Valley of the Kings.</p>
+
+        <div class="about-image">
+          <img src="assets/pictures/about1.jpg" alt="Dori working in the field">
+        </div>
+
+        <p>I’ve loved ancient Egypt for as long as I can remember. As a child, I would sit for hours with my nose in books, completely captivated by tales of golden tombs, hidden rituals, and timeless gods. While others dreamed of faraway futures, I was already walking through the past — tracing hieroglyphs with a flashlight under the covers, imagining myself in the sandals of a temple scribe.</p>
+
+        <p>That wonder never faded. It deepened, matured, and eventually became my life’s work. My path led me around the world and into some of the most respected institutions in Egyptology. There, I had the privilege of working closely with ancient papyri — fragile remnants of thought and theology — translating them, preserving them, and in some sense, continuing a sacred duty.</p>
+
+        <div class="about-image">
+          <img src="assets/pictures/about2.jpg" alt="Dori in a museum or archive">
+        </div>
+
+        <p>This sense of continuity has shaped the way I see my work. My PhD research focused on the <strong>Purification Manual</strong>, the earliest known text describing the <strong>purification ritual</strong> — a ceremony that would one day evolve into the practice we now recognize as baptism. As I translated its lines, I realized something quietly profound: we Egyptologists are not so different from the scribes who first penned these words. We, too, gather texts. We copy them. We guard their meanings. We are caretakers of memory — preserving sacred knowledge across the centuries.</p>
+
+        <p>One of the most meaningful moments in my journey came inside the tomb of <strong>Rameses III</strong>. Time and weather had stripped the walls of their color and clarity, but with the help of <strong>DStretch</strong>, a NASA-developed image enhancement tool, I was able to reconstruct the <strong>Opening of the Mouth</strong> ritual — a vital ceremony meant to awaken the senses of the deceased. Using that technology to bring ancient voices back to light felt like bridging two worlds: science and spirit, modernity and myth.</p>
+
+        <div class="about-image">
+          <img src="assets/pictures/about3.jpg" alt="Reconstructed imagery using DStretch">
+        </div>
+
+        <p>And that, perhaps, is what I love most about this work. It’s not just about discovering the past — it’s about listening to it. It's about continuing a tradition of care, of curiosity, of reverence. The more I listen, the more the ancient world speaks. And I'm here to help it be heard.</p>
+
+        <p><strong>Through <em>Dori of the Nile</em>,</strong> I share stories that make Ancient Egypt feel vivid, beautiful, and deeply human. Whether it’s a whispered love letter from thousands of years ago or the legacy of a forgotten pharaoh, my goal is to spark curiosity, wonder, and a sense of connection between then and now.</p>
       </div>
     </div>
   </div>
 </section>
 
-
- <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">About</h5>
-                <p class="inline-block">
-                    Dora Petrova is an Egyptologist and storyteller passionate about history, culture, and community.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Support</h5>
-                <p class="inline-block">
-                    Like what I do? Consider supporting me on <a href="#">Ko-fi</a>.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub"></h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
-                            <span class="sr-only">Pinterest</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+<footer class="container-fluid">
+  <div id="footer-details" class="row">
+    <div class="col-sm-4">
+      <h5 class="uppercase general-sub">About</h5>
+      <p class="inline-block">
+        Dora Petrova is an Egyptologist and storyteller passionate about history, culture, and community.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h5 class="uppercase general-sub">Support</h5>
+      <p class="inline-block">
+        Like what I do? Consider supporting me on <a href="#">Ko-fi</a>.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h5 class="uppercase general-sub"></h5>
+      <ul class="list-inline social-links">
+        <li class="list-inline-item">
+          <a target="_blank" href="#">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="#">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <span class="sr-only">YouTube</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="#">
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <span class="sr-only">Pinterest</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
-
-
-
 </html>
