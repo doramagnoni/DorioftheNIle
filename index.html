@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dori of the Nile</title>
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/pictures/favicon.png" />
-
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/pictures/favicon.png"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css" />
@@ -49,7 +52,7 @@
       }
 
       .hero-text h1 {
-        font-size: 1.8rem;
+        font-size: 3rem;
         margin-bottom: 0.5rem;
         color: #3b2d1f;
       }
@@ -100,6 +103,11 @@
 
       h2 {
         font-size: 2rem;
+      }
+      .lead {
+        font-family: "Cinzel", serif;
+        font-weight: 400;
+        color: #4c3e2d;
       }
 
       /* Paragraphs */
@@ -153,13 +161,7 @@
         position: sticky;
         top: 0;
         z-index: 1000;
-        background: linear-gradient(
-          to right,
-          #d6b47a,
-          #c6a368,
-          #b79456,
-          #a88445
-        );
+        background: linear-gradient(to right, #d6b47a, #b79456, #9a5622);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
       }
 
@@ -195,25 +197,24 @@
       }
 
       .dori-logo {
-  height: 60px;
-  max-height: 60px;
-  width: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
+        height: 60px;
+        max-height: 60px;
+        width: auto;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
 
-.dori-logo:hover {
-  transform: scale(1.05);
-}
+      .dori-logo:hover {
+        transform: scale(1.05);
+      }
 
-@media (max-width: 576px) {
-  .dori-logo {
-    height: 45px;
-  }
-}
-
+      @media (max-width: 576px) {
+        .dori-logo {
+          height: 45px;
+        }
+      }
 
       @media (max-width: 991.98px) {
         .navbar-brand {
@@ -276,6 +277,12 @@
       .mobile-close button:hover {
         color: #fff;
       }
+
+      @media (max-width: 576px) {
+        .hero-text h1 {
+          font-size: 2.2rem; /* Also increased for small screens */
+        }
+      }
     </style>
   </head>
 
@@ -289,63 +296,66 @@
       </div>
     </header>
 
- <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <!-- Logo shown on all screen sizes -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="assets/pictures/logo-small.png" alt="Dori of the Nile logo" class="dori-logo" />
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Logo shown on all screen sizes -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/pictures/logo-small.png"
+            alt="Dori of the Nile logo"
+            class="dori-logo"
+          />
+        </a>
 
-    <!-- Burger menu button for mobile -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible menu -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="mobile-close text-right d-lg-none pr-3 pt-2">
+        <!-- Burger menu button for mobile -->
         <button
+          class="navbar-toggler"
           type="button"
-          class="btn btn-link text-white"
-          id="mobileCloseBtn"
-          aria-label="Close menu"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <i class="fas fa-times fa-lg"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Collapsible menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mobile-close text-right d-lg-none pr-3 pt-2">
+            <button
+              type="button"
+              class="btn btn-link text-white"
+              id="mobileCloseBtn"
+              aria-label="Close menu"
+            >
+              <i class="fas fa-times fa-lg"></i>
+            </button>
+          </div>
+
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merch.html">Merch</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <ul class="navbar-nav mx-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="videos.html">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="resources.html">Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="merch.html">Merch</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+    </nav>
 
     <section class="container my-5">
       <div class="row">

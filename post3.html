@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DorioftheNile | Blog</title>
+  <title>DorioftheNile | Blog Post</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css" />
@@ -12,13 +12,13 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
 
-  <!-- Hover Effect -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 
-  <!-- Cinzel Font -->
+  <!-- Hover Effect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
 
   <style>
@@ -30,41 +30,64 @@
     }
 
     .section-heading {
+      font-size: 2.4rem;
       margin: 2rem 0 1rem;
-      font-size: 2.5rem;
       text-align: center;
       letter-spacing: 1px;
     }
 
-    .card {
-      background-color: #fdf7e2;
-      border: 1px solid #d4b17a;
+    .blog-content {
+      background-color: rgba(255, 250, 240, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-content h3 {
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+    }
+
+    .blog-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4c3a29;
+    }
+
+    .blog-content img {
+      max-width: 100%;
+      margin: 1.5rem 0;
       border-radius: 10px;
-      transition: transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    .back-link {
+      margin-top: 2rem;
+      display: inline-block;
+      font-size: 1rem;
+      color: #6c4b2e;
+      text-decoration: none;
+      border-bottom: 1px dashed #6c4b2e;
+      transition: all 0.2s ease;
     }
 
-    .card-title {
-      font-size: 1.2rem;
-      color: #4b3b2a;
+    .back-link:hover {
+      color: #4b3621;
+      border-color: #4b3621;
+      text-decoration: none;
     }
 
-    .card-text {
-      font-size: 0.95rem;
-      color: #5a4834;
-    }
-
-    .btn-outline-dark {
-      font-size: 0.85rem;
+    .card-img-top {
+      height: 600px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
   </style>
 </head>
 
 <body class="blog-page">
+  <!-- Header -->
   <header>
     <div class="row no-gutters">
       <a href="index.html" class="col-md-4 logo"></a>
@@ -103,52 +126,33 @@
     </div>
   </header>
 
-  <!-- Blog Grid Section -->
-  <section class="container py-5">
-    <h2 class="section-heading">The Storyteller’s Journal</h2>
-    <p class="text-center" style="font-size: 1.1rem;">Thoughts, discoveries, and reflections from my journey through ancient Egypt and beyond.</p>
+  <!-- Blog Content -->
+  <main class="container py-5">
+    <div class="blog-content">
+      <h2 class="section-heading">Whispers on Papyrus: Love in the Time of Pharaohs</h2>
+      <p><em>Published on May 25, 2025</em></p>
+      <img src="assets/pictures/blog2.jpg" class="card-img-top" alt="Ancient papyrus" />
 
-    <div class="row mt-4">
-      <!-- Blog Card 1 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/pictures/blog1.jpg" class="card-img-top" alt="Blog Post 1">
-          <div class="card-body">
-            <h5 class="card-title">Whispers from the Tomb</h5>
-            <p class="card-text">Exploring the poetry hidden in the Valley of the Kings. A reflection on silence, memory, and eternity.</p>
-            <a href="post1.html" class="btn btn-outline-dark btn-sm">Read More</a>
-          </div>
-        </div>
-      </div>
+      
+    <p>In the hush of desert winds and beneath the eternal gaze of the stars, ancient Egyptians whispered love not just with voices, but in ink—pressed gently onto sheets of papyrus.</p>
 
-      <!-- Blog Card 2 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/pictures/blog3.jpg" class="card-img-top" alt="Blog Post 2">
-          <div class="card-body">
-            <h5 class="card-title">Papyri, Ink & Secrets</h5>
-            <p class="card-text">How ancient papyri reveal voices long buried—and what it means to translate them with care and humility.</p>
-            <a href="post2.html" class="btn btn-outline-dark btn-sm">Read More</a>
-          </div>
-        </div>
-      </div>
+    <p>These were not the cold, ceremonial words of statecraft or divine decree. These were tender confessions, heartbeats etched in black and red, sent from one soul to another across the quiet distances of time. A young man might compare his beloved to the lotus blossom, to sweet beer, to the joy of the festival. A young woman might write of longing so deep, it aches like hunger.</p>
 
-<!-- Blog Card 3 -->
-<div class="col-md-6 col-lg-4 mb-4">
-  <div class="card h-100 shadow-sm">
-    <img src="assets/pictures/blog2.jpg" class="card-img-top" alt="Papyrus love letter">
-    <div class="card-body">
-      <h5 class="card-title">Whispers on Papyrus</h5>
-      <p class="card-text">Love letters from Ancient Egypt reveal hearts laid bare—tender, poetic, and timeless in their longing.</p>
-      <a href="post3.html" class="btn btn-outline-dark btn-sm">Read More</a>
+    <p><em>"I am your first sister, more to me than mother,"</em> writes one anonymous lover. <em>"You are the breath of my lungs."</em> Another speaks of sleepless nights, of waiting at the doorway just to glimpse the one they love pass by.</p>
+
+    <p>What strikes me most is how modern it feels. Thousands of years dissolve in these lines. There’s no pharaoh here, no monument—just two hearts, vulnerable and sincere.</p>
+
+    <p>As I read these letters, I can’t help but feel the weight of translation. It is a sacred act, bringing someone else's love into our language. It asks for reverence. For each phrase we decipher is not only a relic—it’s a secret, once meant for one pair of eyes only.</p>
+
+    <p>And yet, how grateful I am that these voices survived—their ink still clinging to fragments of reed paper, their words still capable of stirring hearts.</p>
+
+    <p>Let them whisper to you too.</p>
+
+      <a href="blog.html" class="back-link">&larr; Back to Blog</a>
     </div>
-  </div>
-</div>
+  </main>
 
-      <!-- Add more blog cards here -->
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="container-fluid">
     <div id="footer-details" class="row">
       <div class="col-sm-4">

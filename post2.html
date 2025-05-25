@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DorioftheNile | Blog</title>
+  <title>DorioftheNile | Blog Post</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css" />
@@ -12,13 +12,13 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
 
-  <!-- Hover Effect -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 
-  <!-- Cinzel Font -->
+  <!-- Hover Effect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
 
   <style>
@@ -30,41 +30,64 @@
     }
 
     .section-heading {
+      font-size: 2.4rem;
       margin: 2rem 0 1rem;
-      font-size: 2.5rem;
       text-align: center;
       letter-spacing: 1px;
     }
 
-    .card {
-      background-color: #fdf7e2;
-      border: 1px solid #d4b17a;
+    .blog-content {
+      background-color: rgba(255, 250, 240, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-content h3 {
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+    }
+
+    .blog-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4c3a29;
+    }
+
+    .blog-content img {
+      max-width: 100%;
+      margin: 1.5rem 0;
       border-radius: 10px;
-      transition: transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    .back-link {
+      margin-top: 2rem;
+      display: inline-block;
+      font-size: 1rem;
+      color: #6c4b2e;
+      text-decoration: none;
+      border-bottom: 1px dashed #6c4b2e;
+      transition: all 0.2s ease;
     }
 
-    .card-title {
-      font-size: 1.2rem;
-      color: #4b3b2a;
+    .back-link:hover {
+      color: #4b3621;
+      border-color: #4b3621;
+      text-decoration: none;
     }
 
-    .card-text {
-      font-size: 0.95rem;
-      color: #5a4834;
-    }
-
-    .btn-outline-dark {
-      font-size: 0.85rem;
+    .card-img-top {
+      height: 600px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
   </style>
 </head>
 
 <body class="blog-page">
+  <!-- Header -->
   <header>
     <div class="row no-gutters">
       <a href="index.html" class="col-md-4 logo"></a>
@@ -103,52 +126,36 @@
     </div>
   </header>
 
-  <!-- Blog Grid Section -->
-  <section class="container py-5">
-    <h2 class="section-heading">The Storyteller’s Journal</h2>
-    <p class="text-center" style="font-size: 1.1rem;">Thoughts, discoveries, and reflections from my journey through ancient Egypt and beyond.</p>
+  <!-- Blog Content -->
+  <main class="container py-5">
+    <div class="blog-content">
+      <h2 class="section-heading">Papyri, Ink & Secrets</h2>
+      <p><em>Published on May 25, 2025</em></p>
+      <img src="assets/pictures/blog3.jpg" class="card-img-top" alt="Ancient papyrus" />
 
-    <div class="row mt-4">
-      <!-- Blog Card 1 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/pictures/blog1.jpg" class="card-img-top" alt="Blog Post 1">
-          <div class="card-body">
-            <h5 class="card-title">Whispers from the Tomb</h5>
-            <p class="card-text">Exploring the poetry hidden in the Valley of the Kings. A reflection on silence, memory, and eternity.</p>
-            <a href="post1.html" class="btn btn-outline-dark btn-sm">Read More</a>
-          </div>
-        </div>
-      </div>
+      <p>There is something sacred about papyrus. Not just because it’s old, or fragile, or pressed with the marks of ink from three thousand years ago—but because it speaks. It carries the voices of the ancient dead. Their everyday moments, their jokes, their anger, their longing.</p>
 
-      <!-- Blog Card 2 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/pictures/blog3.jpg" class="card-img-top" alt="Blog Post 2">
-          <div class="card-body">
-            <h5 class="card-title">Papyri, Ink & Secrets</h5>
-            <p class="card-text">How ancient papyri reveal voices long buried—and what it means to translate them with care and humility.</p>
-            <a href="post2.html" class="btn btn-outline-dark btn-sm">Read More</a>
-          </div>
-        </div>
-      </div>
+      <p>When we touch papyri, we touch lives.</p>
 
-<!-- Blog Card 3 -->
-<div class="col-md-6 col-lg-4 mb-4">
-  <div class="card h-100 shadow-sm">
-    <img src="assets/pictures/blog2.jpg" class="card-img-top" alt="Papyrus love letter">
-    <div class="card-body">
-      <h5 class="card-title">Whispers on Papyrus</h5>
-      <p class="card-text">Love letters from Ancient Egypt reveal hearts laid bare—tender, poetic, and timeless in their longing.</p>
-      <a href="post3.html" class="btn btn-outline-dark btn-sm">Read More</a>
+      <p>I still remember the first time I held one in my gloved hands—a letter from the Ramesside period, inked in flowing hieratic. I couldn’t read a single word of it. Worse still, I wasn’t even sure I was holding it the right way up.</p>
+
+      <p>But something about that moment changed me. I got the publication rights for the text, spent my last bit of money on a sleeping bag, and moved into the library. For weeks, I slept under my desk and poured over the text by day. Months later, I had transcribed and translated the letter—my very first text publication.</p>
+
+      <p>It was exhausting, humbling, and exhilarating.</p>
+
+      <p>Because translating a papyrus is not just about deciphering signs. It’s about listening to someone else’s voice across time and knowing you’ll never quite catch all of it. Something is always just out of reach—a word smudged, a verb uncertain, a cultural reference lost in the flood of history. But you keep listening anyway.</p>
+
+      <p>As Egyptologists, in some strange way, we do what the ancient scribes did. We collect, preserve, and copy texts. We safeguard knowledge that was considered sacred then—and is still sacred now. The ink may fade, but the intent survives.</p>
+
+      <p>Some papyri are bureaucratic: tax records, grain accounts, inventories. Others are poetic or personal—love letters, lullabies, insults scribbled on ostraca, or quiet requests to a god. And buried in the folds of each one is a human presence.</p>
+
+      <p>And that’s what makes this work so meaningful. In every fragile sheet of papyrus, there is a voice that was never meant to disappear.</p>
+
+      <a href="blog.html" class="back-link">&larr; Back to Blog</a>
     </div>
-  </div>
-</div>
+  </main>
 
-      <!-- Add more blog cards here -->
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="container-fluid">
     <div id="footer-details" class="row">
       <div class="col-sm-4">
