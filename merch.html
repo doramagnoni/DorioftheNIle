@@ -83,6 +83,9 @@
 }
 
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
 </head>
 
 <body class="merch-page">
@@ -121,6 +124,7 @@
           </div>
         </div>
       </div>
+  
     </div>
   </header>
 
@@ -203,8 +207,28 @@
         </li>
       </ul>
     </div>
+     <a href="privacy.html">Privacy Policy</a>
   </div>
 </footer>
+
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      palette: {
+        popup: { background: "#000" },
+        button: { background: "#f1d600" }
+      },
+      theme: "classic",
+      position: "bottom",
+      content: {
+        message: "This website uses cookies to ensure you get the best experience.",
+        dismiss: "Got it!",
+        link: "Learn more",
+        href: "/privacy.html"
+      }
+    })
+  });
+</script>
 
 </body>
 
